@@ -186,7 +186,7 @@ header {
 
 /* -------- block 4 -------- */
 .block_3 {
-    min-width: 100vw;
+    min-width: 2000px;
     min-height: 100vh;
     padding-bottom: 3%;
 }
