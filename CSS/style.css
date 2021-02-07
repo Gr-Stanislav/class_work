@@ -185,7 +185,7 @@ header {
 }
 
 /* -------- block 4 -------- */
-.block_3 {
+.block_4 {
     min-width: 2000px;
     min-height: 100vh;
     padding-bottom: 3%;
@@ -199,7 +199,7 @@ header {
     -webkit-text-fill-color: transparent;
 }
 
-.block_3__title {
+.block_4__title {
     text-align: center;
     padding: 5% 0;
     margin: 0 auto;
