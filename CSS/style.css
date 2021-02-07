@@ -105,19 +105,18 @@ header {
 
 .buttom_header_zagolovok {
     color: #3695FF;
-    font-size: 3rem;
     text-align: center;
-    padding-top: 40px;
+    padding: 3% 0;
 }
 
 .buttom_header_text {
     width: 65%;
     margin: 0 auto;
     margin-top: 30px;
-    color: black;
-    font-size: 1rem;
-    text-align: center;
+    color: #5A5A5A;
+    font: 400 16px/35px 'Lato', sans-serif;
     margin-bottom: 70px;
+    text-align: center;
 }
 
 
@@ -135,8 +134,7 @@ header {
 .expert_zagolovok {
     text-align: center;
     color: #3695FF;
-    margin-top: 2%;
-    font-size: 3rem;
+    padding: 3% 0;
     margin-bottom: 4rem;
 }
 
@@ -192,19 +190,27 @@ header {
 }
 
 
-.block_3__title {
-    text-align: center;
-    padding: 7% 0;
-    margin: 0 auto;
-    font: lighter 50px/32px 'Lato', Arial, Helvetica, sans-serif;
+.title__gradient {
+    font: lighter 50px/35px 'Lato', Arial, Helvetica, sans-serif;
     background: -webkit-linear-gradient(#3695FF, #3564FC);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
+.block_3__title {
+    text-align: center;
+    padding: 5% 0;
+    margin: 0 auto;
+}
+
+.container {
+    margin-bottom: 5%; 
+}
+
 .cards {
-    width: 85%;
-    margin: 3% auto;
+    width: 50%;
+    margin: 0 auto;
+    padding-bottom: 5%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -215,7 +221,11 @@ header {
 }
 
 /* ---- medium screen ---- */
-@media only screen and (min-width: 65rem) {
+@media only screen and (min-width: 35rem) {
+    .cards {
+        width: 85%;
+    }
+
     .card__item {
         padding: 0%;
     }
@@ -238,15 +248,13 @@ header {
     padding-bottom: 95px;
 }
 .bloсk_5_head{
-    padding-top: 95px;
     text-align: center;
     font-family: "Lato";
-    font-size: 50px;
-    font-weight: 400;
     color: #3695FF;
-    padding-bottom: 70px;
+    padding: 2% 0;
 }
 .block_6_foot{
+    text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
