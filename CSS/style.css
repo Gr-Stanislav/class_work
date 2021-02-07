@@ -228,14 +228,17 @@ header {
     flex-direction: column;
     background-color: #F1F8FF;
     padding-top: 95px;
-    width: 2000px;
+    width: 100%;
+    max-width: 2000px;
 }
 .bloсk_5_img{
     display: flex;
     align-items: center;
-    width: 2000px;
+    width: 100%;
+    max-width: 2000px;
     justify-content: space-evenly;
     padding-bottom: 95px;
+    flex-wrap: wrap;
 }
 .bloсk_5_head{
     padding-top: 95px;
@@ -250,10 +253,12 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 2000px;
+    width: 100%;
+    max-width: 2000px;
     height: 250px;
     background: linear-gradient(45deg, #84a0ff, #0987c2);
     font-family: "Lato";
+    flex-wrap: wrap;
 }
 .block_6_foot_txt{
     font-size: 50px;
