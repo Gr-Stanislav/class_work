@@ -45,6 +45,7 @@ header {
     margin: 1rem;
     padding: 3% 25%;
     border-radius: 25px;
+    border: none;
 }
 
 .photo_user {
@@ -92,6 +93,7 @@ header {
     width: 13%;
     padding: 10px;
     border-radius: 25px;
+    color: #194277;
 }
 
 /* WHITE BLOCK---------------- */
