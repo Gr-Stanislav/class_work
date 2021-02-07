@@ -15,7 +15,7 @@ header {
     max-width: 2000px;
     height: auto;
     /* background-color: #3695FF; */
-    background-image: url("/images/trat.png");
+    background-image: url("../images/trat.png");
 }
 
 .top_block {
