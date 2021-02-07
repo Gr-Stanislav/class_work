@@ -135,118 +135,164 @@ header {
 }
 
 
-/* EXPERT---------------- */
+/* -------- Simon's styles goes here --------- */
 
+
+
+/* ------ COMMON TAGS -------
+Gradient for title, it's seems like common styles for all project */
+.title--gradient {
+    background: -webkit-linear-gradient(#3695FF, #3564FC);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+} 
+
+/* Also common tag */
+.title {
+    font: 300 50px/35px 'Lato', Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding: 20% 0;
+    margin: 0 auto;
+}
+/* ---- end of common tags ---- */
+
+
+/* ---------- BLOCK 3 STYLES GOES GERE ---------- */
 .expert {
     width: 100%;
     max-width: 2000px;
     height: auto;
     background-color: #F1F8FF;
-    padding-top: 3rem;
     padding-bottom: 3rem;
 }
 
-.expert_zagolovok {
-    text-align: center;
-    color: #3695FF;
-    padding: 3% 0;
-    margin-bottom: 4rem;
-}
-
-.expert_top_block {
-    width: 60%;
+.expert__container {
+    width: 70%;
     margin: 0 auto;
-    height: auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-.top_block_1, .top_block_2, .top_block_3 {
-    width: 23%;
-    min-width: 200px;
-}
-
-.item img {
-    margin: 0 auto;
-    display: block;
-    width: 66%;
-    height: auto;
-}
-
-.item h4 {
-    text-align: center;
-    margin-top: 3rem;
-    margin-bottom: 2rem;
-    color: #3677FD;
-    width: 100%;
-}
-
-.item p {
-    text-align: center;
-    color: #5A5A5A;
-}
-
-.expert_botton_block {
-    width: 60%;
-    margin: 0 auto;
-    margin-top: 40px;
-    height: auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-/* -------- block 4 -------- */
-.block_4 {
-    max-width: 2000px;
-    min-height: 100vh;
-    padding-bottom: 3%;
-}
-
-
-.title__gradient {
-    font: lighter 50px/35px 'Lato', Arial, Helvetica, sans-serif;
-    background: -webkit-linear-gradient(#3695FF, #3564FC);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.block_4__title {
-    text-align: center;
-    padding: 5% 0;
-    margin: 0 auto;
-}
-
-.container {
-    margin-bottom: 5%; 
-}
-
-.cards {
-    width: 50%;
-    margin: 0 auto;
-    padding-bottom: 5%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
 
-.card__item {
-    padding-bottom: 5%;
+.container__item {
+    text-align: center;
+    width: 100%;
+    /* height: 500px; */
+    padding: 0% 2% 10%;
 }
 
-/* ---- medium screen ---- */
-@media only screen and (min-width: 35rem) {
-    .cards {
-        width: 85%;
+.container__title {
+    font: bold 24px/24px 'Lato', sans-serif;
+    color: #3677FD;
+    padding: 10% 0;
+}
+
+.container__text {
+    font: 400 16px/35px 'Lato', sans-serif;
+    color: #5A5A5A;
+}
+
+.item__radius {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 140px;
+    height: 140px;
+    margin: 13% auto;
+    border-radius: 50%;
+    border: 1px solid #B7C0C9;
+    
+}
+
+.item__svg {
+    display: block;
+}
+
+/* ----- styles for adaptive ---- */
+@media only screen and (min-width: 650px) {
+    .container__item {
+        width: 50%;
     }
 
-    .card__item {
-        padding: 0%;
+
+    .title {
+        padding: 6% 0;
+    }
+} 
+
+@media only screen and (min-width: 1020px) {
+    .container__item  {
+        width: 33%;
+    }
+
+    .special {
+        padding: 0;
+    }
+
+    .expert__container {
+        align-items: flex-start;
     }
   } 
 
-  /* --------- end of 4 block --------- */
+
+ /* ------------ END OF BLOCK 4 ------------ */
+
+
+/* ---------- BLOCK 4 STYLES GOES GERE ---------- */
+.latest {
+    width: 100%;
+    max-width: 2000px;
+    padding-bottom: 7%;
+}
+
+.cards {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.card__image {
+    width: 100%;
+    max-width: 361px;
+    height: auto;
+}
+
+.card__item {
+    text-align: center;
+    width: 100%;
+    padding: 0% 1% 4%;
+}
+
+/* ----- styles for adaptive ---- */
+@media only screen and (min-width: 650px) {
+    .card__item {
+        width: 50%;
+    }
+
+    .title {
+        padding: 6% 0;
+    }
+
+    .cards {
+        justify-content: space-evenly;
+    }
+} 
+
+@media only screen and (min-width: 1020px) {
+    .card__item {
+        width: 33%;
+
+    }
+    
+  } 
+/* ------------ END OF BLOCK 4 ------------ */
+/* ------------ END Simon's styles ------------ */
+
+
 /*section5*/
 .bloсk_5{
     display: flex;
