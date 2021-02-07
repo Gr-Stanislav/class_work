@@ -57,6 +57,19 @@ header {
     border-radius: 50%;
 }
 
+.photo_user::before {
+    content: "";
+    display: block;
+    border: 5px solid white;
+    width: 105%;
+    height: 105%;
+    border-radius: 50%;
+    position: relative;
+    left: -9px;
+    top: -9px;
+}
+
+
 .zagolovok {
     text-align: center;
     margin: 0 auto;
