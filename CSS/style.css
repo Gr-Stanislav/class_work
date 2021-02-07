@@ -137,8 +137,6 @@ header {
 
 /* -------- Simon's styles goes here --------- */
 
-
-
 /* ------ COMMON TAGS -------
 Gradient for title, it's seems like common styles for all project */
 .title--gradient {
@@ -177,7 +175,8 @@ Gradient for title, it's seems like common styles for all project */
 .container__item {
     text-align: center;
     width: 100%;
-    /* height: 500px; */
+    /* need to feex resize fonts in 50px screen */
+    /* height: 500px; */ 
     padding: 0% 2% 10%;
 }
 
@@ -202,7 +201,6 @@ Gradient for title, it's seems like common styles for all project */
     margin: 13% auto;
     border-radius: 50%;
     border: 1px solid #B7C0C9;
-    
 }
 
 .item__svg {
@@ -214,8 +212,7 @@ Gradient for title, it's seems like common styles for all project */
     .container__item {
         width: 50%;
     }
-
-
+    
     .title {
         padding: 6% 0;
     }
@@ -226,18 +223,11 @@ Gradient for title, it's seems like common styles for all project */
         width: 33%;
     }
 
-    .special {
-        padding: 0;
-    }
-
     .expert__container {
         align-items: flex-start;
     }
   } 
-
-
- /* ------------ END OF BLOCK 4 ------------ */
-
+ /* ------------ END OF BLOCK 3 ------------ */
 
 /* ---------- BLOCK 4 STYLES GOES GERE ---------- */
 .latest {
