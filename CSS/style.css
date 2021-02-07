@@ -180,3 +180,42 @@ header {
     flex-wrap: wrap;
     justify-content: space-around;
 }
+
+/* -------- block 4 -------- */
+.block_3 {
+    min-width: 100vw;
+    min-height: 100vh;
+    padding-bottom: 3%;
+}
+
+
+.block_3__title {
+    text-align: center;
+    padding: 7% 0;
+    margin: 0 auto;
+    font: lighter 50px/32px 'Lato', Arial, Helvetica, sans-serif;
+    background: -webkit-linear-gradient(#3695FF, #3564FC);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.cards {
+    width: 85%;
+    margin: 3% auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.card__item {
+    padding-bottom: 5%;
+}
+
+/* ---- medium screen ---- */
+@media only screen and (min-width: 65rem) {
+    .card__item {
+        padding: 0%;
+    }
+  } 
+
+  /* --------- end of 4 block --------- */
