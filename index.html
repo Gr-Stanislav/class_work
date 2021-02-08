@@ -5,12 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon-precomposed" href="images/apple-touch-icon.png" />
+    <!-- need to freak out how to make favicon on apple browser (safari) -->
     <link rel="stylesheet" href="CSS/style.css">
-    <title>Команда</title>
+    <title>Portfolio</title>
 </head>
 
 <body>
-
     <header>
         <div class="top_block">
 
@@ -22,8 +25,19 @@
                 <button>Accept</button>
             </div>
         </div>
-
-        <img src="images/Menuxa.png" alt="menu" class="menu">
+        <!-- Trigger/Open The Modal -->
+        <button id="myBtn" class="modal__btn"></button>
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2 class="title title--gradient"> <a class="anchor" data-wow="1" href="#about">About Me</a></h2>
+                <h2 class="title title--gradient"> <a class="anchor" data-wow="2" href="#expert">Expert It</a></h2>
+                <h2 class="title title--gradient"> <a class="anchor" data-wow="3" href="#latest">Latest Works</a></h2>
+                <h2 class="title title--gradient"> <a class="anchor" data-wow="4" href="#clients">See our clients</a></h2>
+            </div>
+        </div>
         <div class="photo_user"></div>
 
 
@@ -50,8 +64,8 @@
         <button class="HIREME">HIRE ME</button>
 
         <div class="buttom_header">
+            <a name="about"></a>
             <h2 class="buttom_header_zagolovok title--gradient">About Me</h2>
-
             <p class="buttom_header_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
                 ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
@@ -62,6 +76,7 @@
     </header>
     <!-- Simon's styles goes here -->
     <div class="expert">
+        <a name="expert"></a>
         <h2 class="title block_3__title title--gradient">Expert In</h2>
         <div class="container expert__container">
             <div class="item container__item">
@@ -117,6 +132,7 @@
         </div>
     </div>
    <div class="latest">
+        <a name="latest"></a>
         <h2 class="title latest__title title--gradient">Latest Works</h2>
         <div class="cards">
                 <div class="card__item">
@@ -141,6 +157,7 @@
     </div>
     <!-- End of Simon's styles -->
  <div class="bloсk_5">
+        <a name="clients"></a>
         <div class="bloсk_5_head title title--gradient">Clients</div>
         <div class="bloсk_5_img">
             <div><img src="images/MSFT_logo_png.png" alt="Microsoft"></div>
@@ -154,5 +171,6 @@
         </div>
         <div class="block_6_foot_button"><a href="" class="floating-button">HIRE ME</a></div>
     </div>
+    <script src="js/main.js"></script>
 </body>
 </html>
