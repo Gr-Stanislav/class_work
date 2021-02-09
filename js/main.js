@@ -1,3 +1,4 @@
+//  Made by Simon in collaboration with w3schools and stackoverflow 
 // Get the modal
 let modal = document.getElementById("myModal");
 
@@ -30,4 +31,3 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
-
