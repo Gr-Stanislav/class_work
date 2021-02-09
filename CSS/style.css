@@ -3,9 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 html {
     font-family: 'Lato', Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;  
 }
 
 /* HEADER------------------------- */
@@ -26,14 +26,6 @@ header {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-}
-
-.menu {
-    display: block;
-    position: relative;
-    left: 75%;
-    top: 10%;
-    cursor: pointer;
 }
 
 .top_block_text {
@@ -145,113 +137,236 @@ header {
 
 .buttom_header_zagolovok {
     color: #3695FF;
-    font-size: 3rem;
     text-align: center;
-    padding-top: 40px;
+    padding: 3% 0;
 }
 
 .buttom_header_text {
     width: 65%;
     margin: 0 auto;
     margin-top: 30px;
-    color: black;
-    font-size: 1rem;
-    text-align: center;
+    color: #5A5A5A;
+    font: 400 16px/35px 'Lato', sans-serif;
     margin-bottom: 70px;
+    text-align: center;
 }
 
+/* -------- Simon's styles goes here --------- */
 
-/* EXPERT---------------- */
+/* -------- MODAL WINDOW STYLES GOES HERE ------- */
 
+/* The Modal (background) */
+.modal__btn {
+    display: block;
+    position: absolute;
+    right: 17%;
+    top: 10%;
+    cursor: pointer;
+    width: 100%;
+    max-width: 25px;
+    height: 1.5rem;
+    outline: none;
+    background-color: transparent;
+    border: none;
+    border-top: 3px solid #eceaef;
+    border-bottom: 3px solid #eceaef;
+}
+
+.modal__btn::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    max-width: 25px;
+    border-top: 3px solid #eceaef;
+}
+
+.modal__btn:hover::after,
+.modal__btn:hover {
+    border-color: rgb(25, 66, 119);
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 99; /* Sit on top */
+    padding-top: 7%; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%; 
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+  }
+  
+/* Modal Content */
+  .modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: 0 auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 55%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+  }
+
+
+/* Modal Animation */
+  @-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+  }
+  
+  @keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+  }
+  
+  
+  /* The Close Button */
+  .close {
+    color: #aaaaaa;
+    position: absolute;
+    top: 1%;
+    right: 2%;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: rgb(25, 66, 119);
+    text-decoration: none;
+    cursor: pointer;
+  }
+/* -------- END OF MODAL  ------- */
+
+
+/* ------ COMMON TAGS -------
+Gradient for title, it's seems like common styles for all project */
+.title--gradient {
+    background: -webkit-linear-gradient(#3695FF, #3564FC);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+} 
+
+/* Also common tag */
+.title {
+    font: 300 50px/35px 'Lato', Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding: 20% 0;
+    margin: 0 auto;
+}
+/* ---- end of common tags ---- */
+
+
+/* ---------- BLOCK 3 STYLES GOES GERE ---------- */
 .expert {
     width: 100%;
     max-width: 2000px;
     height: auto;
     background-color: #F1F8FF;
-    padding-top: 3rem;
     padding-bottom: 3rem;
 }
 
-.expert_zagolovok {
-    text-align: center;
-    color: #3695FF;
-    margin-top: 2%;
-    font-size: 3rem;
-    margin-bottom: 4rem;
-}
-
-.expert_top_block {
-    width: 60%;
+.expert__container {
+    width: 70%;
     margin: 0 auto;
-    height: auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-.top_block_1, .top_block_2, .top_block_3 {
-    width: 23%;
-    min-width: 200px;
-}
-
-.item img {
-    margin: 0 auto;
-    display: block;
-    width: 66%;
-    height: auto;
-}
-
-.item h4 {
-    text-align: center;
-    margin-top: 3rem;
-    margin-bottom: 2rem;
-    color: #3677FD;
-    width: 100%;
-}
-
-.item p {
-    text-align: center;
-    color: #5A5A5A;
-}
-
-.expert_botton_block {
-    width: 60%;
-    margin: 0 auto;
-    margin-top: 40px;
-    height: auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-/* -------- block 4 -------- */
-.block_3 {
-    min-width: 100vw;
-    min-height: 100vh;
-    padding-bottom: 3%;
-}
-
-
-.block_3__title {
-    text-align: center;
-    padding: 7% 0;
-    margin: 0 auto;
-    font: lighter 50px/32px 'Lato', Arial, Helvetica, sans-serif;
-    background: -webkit-linear-gradient(#3695FF, #3564FC);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.cards {
-    width: 85%;
-    margin: 3% auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
 
+.container__item {
+    text-align: center;
+    width: 100%;
+    /* need to feex resize fonts in 50px screen */
+    /* height: 500px; */ 
+    padding: 0% 2% 10%;
+}
+
+.container__title {
+    font: bold 24px/24px 'Lato', sans-serif;
+    color: #3677FD;
+    padding: 10% 0;
+}
+
+.container__text {
+    font: 400 16px/35px 'Lato', sans-serif;
+    color: #5A5A5A;
+}
+
+.item__radius {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 140px;
+    height: 140px;
+    margin: 13% auto;
+    border-radius: 50%;
+    border: 1px solid #B7C0C9;
+}
+
+.item__svg {
+    display: block;
+}
+
+/* ----- styles for adaptive ---- */
+@media only screen and (min-width: 650px) {
+    .container__item {
+        width: 50%;
+    }
+    
+    .title {
+        padding: 6% 0;
+    }
+} 
+
+@media only screen and (min-width: 1020px) {
+    .container__item  {
+        width: 33%;
+    }
+
+    .expert__container {
+        align-items: flex-start;
+    }
+  } 
+ /* ------------ END OF BLOCK 3 ------------ */
+
+/* ---------- BLOCK 4 STYLES GOES GERE ---------- */
+.latest {
+    width: 100%;
+    max-width: 2000px;
+    padding-bottom: 7%;
+}
+
+.cards {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.card__image {
+    width: 100%;
+    max-width: 361px;
+    height: auto;
+}
+
 .card__item {
-    padding-bottom: 5%;
+    text-align: center;
+    width: 100%;
+    padding: 0% 1% 4%;
 }
 
 @media screen and (max-width: 650px){
@@ -268,11 +383,101 @@ header {
     }
 }
 
-/* ---- medium screen ---- */
-@media only screen and (min-width: 65rem) {
+/* ----- styles for adaptive ---- */
+@media only screen and (min-width: 650px) {
+
     .card__item {
-        padding: 0%;
+        width: 50%;
     }
+
+    .title {
+        padding: 6% 0;
+    }
+
+    .cards {
+        justify-content: space-evenly;
+    }
+} 
+
+@media only screen and (min-width: 1020px) {
+    .card__item {
+        width: 33%;
+
+    }
+    
+  } 
+/* ------------ END OF BLOCK 4 ------------ */
+/* ------------ END Simon's styles ------------ */
+
+
+/*section5*/
+.bloсk_5{
+    display: flex;
+    flex-direction: column;
+    background-color: #F1F8FF;
+    padding-top: 95px;
+    width: 100%;
+    max-width: 2000px;
+}
+.bloсk_5_img{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 2000px;
+    justify-content: space-evenly;
+    padding-bottom: 95px;
+    flex-wrap: wrap;
+}
+.bloсk_5_head{
+    text-align: center;
+    font-family: "Lato";
+    color: #3695FF;
+    padding: 2% 0;
+}
+.block_6_foot{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 2000px;
+    height: 250px;
+    background: linear-gradient(45deg, #84a0ff, #0987c2);
+    font-family: "Lato";
+    flex-wrap: wrap;
+}
+.block_6_foot_txt{
+    font-size: 50px;
+    font-weight: lighter;
+    color: white;
+}
+.block_6_foot_txt_txt{
+    font-weight: 400;
+}
+/*button*/
+.floating-button {
+    text-decoration: none;
+    display: inline-block;
+    width: 140px;
+    height: 45px;
+    line-height: 45px;
+    border-radius: 45px;
+    margin: 10px 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 3px;
+    font-weight: 600;
+    color: #524f4e;
+    background: white;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, .1);
+    transition: .3s;
+  }
+  .floating-button:hover {
+    background: #378ab1;
+    box-shadow: 0 15px 20px rgba(3, 99, 143, 0.4);
+    color: white;
+    transform: translateY(-7px);
   } 
 
-  /* --------- end of 4 block --------- */
