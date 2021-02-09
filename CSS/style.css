@@ -14,7 +14,6 @@ header {
     width: 100%;
     max-width: 2000px;
     height: auto;
-    /* background-color: #3695FF; */
     background-image: url("../images/trat.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -127,9 +126,24 @@ header {
     cursor: pointer;
 }
 
+@media screen and (max-width: 650px){
+    .zagolovok {
+        width: 87%;
+    }
+
+    .slide {
+        width: 90%;
+    }
+
+    .top_block_1, .top_block_2, .top_block_3 {
+        margin-top: 50px;
+    }
+}
+
 /* WHITE BLOCK---------------- */
 
 .buttom_header {
+    position: relative;
     width: 100%;
     height: auto;
     background-color: #ffffff;
@@ -153,6 +167,39 @@ header {
 }
 
 /* -------- Simon's styles goes here --------- */
+
+/* -------- ARROW STYLES GOES HERE ------- */
+.arrow {
+    position: fixed;
+    bottom: 4%;
+    right: 5%;
+    border: 1px solid #c3c2c5;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 4px;
+  }
+.arrow:hover::after, 
+.arrow:hover {
+    border-color: rgb(25, 66, 119);
+    cursor: pointer;
+}
+
+.arrow::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -46%;
+    left: 19.5%;
+    border: 1px solid #c3c2c5;
+    height: 200%;
+    transform: rotate(-225deg);
+}
+
+  .up {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+  }
+/* -------- End of ARROW  ------- */
 
 /* -------- MODAL WINDOW STYLES GOES HERE ------- */
 
@@ -368,20 +415,6 @@ Gradient for title, it's seems like common styles for all project */
     text-align: center;
     width: 100%;
     padding: 0% 1% 4%;
-}
-
-@media screen and (max-width: 650px){
-    .zagolovok {
-        width: 87%;
-    }
-
-    .slide {
-        width: 90%;
-    }
-
-    .top_block_1, .top_block_2, .top_block_3 {
-        margin-top: 50px;
-    }
 }
 
 /* ----- styles for adaptive ---- */
