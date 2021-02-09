@@ -16,6 +16,8 @@ header {
     height: auto;
     /* background-color: #3695FF; */
     background-image: url("../images/trat.png");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .top_block {
@@ -28,7 +30,7 @@ header {
 
 .menu {
     display: block;
-    position: absolute;
+    position: relative;
     left: 75%;
     top: 10%;
     cursor: pointer;
@@ -44,10 +46,18 @@ header {
     color: #194277;
     background-color: #ffffff;
     margin: 1rem;
-    padding: 3% 25%;
+    padding: 10% 50%;
     border-radius: 25px;
     border: none;
+    outline: none;
+    cursor: pointer;
 }
+
+.men {
+    width: 100%;
+    margin-top: 2%;
+}
+
 
 .photo_user {
     margin: 0 auto;
@@ -61,13 +71,25 @@ header {
 .photo_user::before {
     content: "";
     display: block;
-    border: 5px solid white;
-    width: 105%;
-    height: 105%;
+    border: 7px solid rgba(255, 255, 255, 0.171);
+    width: 103%;
+    height: 103%;
     border-radius: 50%;
     position: relative;
     left: -9px;
-    top: -9px;
+    top: -9.7px;
+}
+
+.photo_user::after {
+    content: "";
+    display: block;
+    border: 8px solid rgba(255, 255, 255, 0.082);
+    width: 113%;
+    height: 113%;
+    border-radius: 50%;
+    position: relative;
+    left: -18px;
+    top: -197.5px;
 }
 
 
@@ -84,10 +106,10 @@ header {
     width: 50%;
     text-align: center;
     margin: 0 auto;
-    height: 40px;
 }
+
 .header_text {
-    width: 56%;
+    width: 100%;
     text-align: center;
     margin: 0 auto;
     color: rgba(255, 255, 255, 0.767);
@@ -108,6 +130,8 @@ header {
     padding: 10px;
     border-radius: 25px;
     color: #194277;
+    outline: none;
+    cursor: pointer;
 }
 
 /* WHITE BLOCK---------------- */
@@ -228,6 +252,20 @@ header {
 
 .card__item {
     padding-bottom: 5%;
+}
+
+@media screen and (max-width: 650px){
+    .zagolovok {
+        width: 87%;
+    }
+
+    .slide {
+        width: 90%;
+    }
+
+    .top_block_1, .top_block_2, .top_block_3 {
+        margin-top: 50px;
+    }
 }
 
 /* ---- medium screen ---- */
