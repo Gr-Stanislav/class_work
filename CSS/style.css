@@ -71,6 +71,19 @@ header {
     position: relative;
     left: -9px;
     top: -9.7px;
+    animation-name: mercan;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes mercan {
+    0%, 100% {
+        opacity: 0.3;
+    }
+
+    50%, 50% {
+        opacity: 1;
+    }
 }
 
 .photo_user::after {
@@ -83,6 +96,19 @@ header {
     position: relative;
     left: -18px;
     top: -197.5px;
+    animation-name: mercan1;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes mercan1 {
+    0%, 100% {
+        opacity: 0.3;
+    }
+
+    70%, 30% {
+        opacity: 1;
+    }
 }
 
 
