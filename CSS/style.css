@@ -63,7 +63,7 @@ header {
 .photo_user::before {
     content: "";
     display: block;
-    border: 7px solid rgba(255, 255, 255, 0.171);
+    border: 7px solid rgb(255 255 255 / 58%);
     width: 164px;
     height: 164px;
     border-radius: 50%;
@@ -71,7 +71,7 @@ header {
     left: -8.5px;
     top: -8.7px;
     animation-name: mercan;
-    animation-duration: 3s;
+    animation-duration: 4s;
     animation-iteration-count: infinite;
 }
 
@@ -88,7 +88,7 @@ header {
 .photo_user::after {
     content: "";
     display: block;
-    border: 8px solid rgba(255, 255, 255, 0.082);
+    border: 8px solid rgb(255 255 255 / 37%);
     width: 180px;
     height: 180px;
     border-radius: 50%;
@@ -105,7 +105,7 @@ header {
         opacity: 0.3;
     }
 
-    70%, 30% {
+    80%, 20% {
         opacity: 1;
     }
 }
@@ -163,6 +163,10 @@ header {
 
     .top_block_1, .top_block_2, .top_block_3 {
         margin-top: 50px;
+    }
+
+    .top_block_botton button {
+        padding: 8% 37%;
     }
 }
 
