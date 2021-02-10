@@ -64,12 +64,12 @@ header {
     content: "";
     display: block;
     border: 7px solid rgba(255, 255, 255, 0.171);
-    width: 160px;
-    height: 160px;
+    width: 164px;
+    height: 164px;
     border-radius: 50%;
     position: relative;
-    left: -9px;
-    top: -9.7px;
+    left: -8.5px;
+    top: -8.7px;
     animation-name: mercan;
     animation-duration: 3s;
     animation-iteration-count: infinite;
@@ -89,13 +89,12 @@ header {
     content: "";
     display: block;
     border: 8px solid rgba(255, 255, 255, 0.082);
-    width: 174px;
-    height: 174px;
+    width: 180px;
+    height: 180px;
     border-radius: 50%;
     position: relative;
-
     left: -18px;
-    top: -197.5px;
+    top: -195.5px;
     animation-name: mercan1;
     animation-duration: 4s;
     animation-iteration-count: infinite;
