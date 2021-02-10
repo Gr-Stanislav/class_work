@@ -12,7 +12,6 @@ html {
 
 header {
     width: 100%;
-    max-width: 2000px;
     height: auto;
     background-image: url("../images/trat.png");
     background-repeat: no-repeat;
@@ -64,12 +63,12 @@ header {
     content: "";
     display: block;
     border: 7px solid rgb(255 255 255 / 58%);
-    width: 164px;
-    height: 164px;
+    width: 159px;
+    height: 159px;
     border-radius: 50%;
     position: relative;
-    left: -8.5px;
-    top: -8.7px;
+    left: -5.5px;
+    top: -5.7px;
     animation-name: mercan;
     animation-duration: 4s;
     animation-iteration-count: infinite;
@@ -89,12 +88,12 @@ header {
     content: "";
     display: block;
     border: 8px solid rgb(255 255 255 / 37%);
-    width: 180px;
-    height: 180px;
+    width: 173px;
+    height: 173px;
     border-radius: 50%;
     position: relative;
-    left: -18px;
-    top: -195.5px;
+    left: -14px;
+    top: -186.5px;
     animation-name: mercan1;
     animation-duration: 4s;
     animation-iteration-count: infinite;
@@ -347,8 +346,7 @@ Gradient for title, it's seems like common styles for all project */
 
 /* ---------- BLOCK 3 STYLES GOES GERE ---------- */
 .expert {
-    width: 100%;
-    max-width: 2000px;
+    width: 100%;.
     height: auto;
     background-color: #F1F8FF;
     padding-bottom: 3rem;
@@ -422,7 +420,6 @@ Gradient for title, it's seems like common styles for all project */
 /* ---------- BLOCK 4 STYLES GOES GERE ---------- */
 .latest {
     width: 100%;
-    max-width: 2000px;
     padding-bottom: 7%;
 }
 
@@ -481,13 +478,11 @@ Gradient for title, it's seems like common styles for all project */
     background-color: #F1F8FF;
     padding-top: 95px;
     width: 100%;
-    max-width: 2000px;
 }
 .bloсk_5_img{
     display: flex;
     align-items: center;
     width: 100%;
-    max-width: 2000px;
     justify-content: space-evenly;
     padding-bottom: 95px;
     flex-wrap: wrap;
@@ -504,7 +499,6 @@ Gradient for title, it's seems like common styles for all project */
     align-items: center;
     justify-content: center;
     width: 100%;
-    max-width: 2000px;
     height: 250px;
     background: linear-gradient(45deg, #84a0ff, #0987c2);
     font-family: "Lato";
